@@ -81,8 +81,6 @@ nav a {
 
 .banner .pic {
     width: 959px;
-    margin-bottom: -6px;
-    z-index: 1;
 }
 
 .banner-greeting {
@@ -213,28 +211,64 @@ textarea {
     border: 0;
     width: 100%;
 }
+
 /* Responsive Styles */
 /* Mobile devices */
-@media screen and (max-width:576px){
-    .skill-container, .resume-container, footer, .about-container{
+@media screen and (max-width:576px) {
+    .header {
+        background-image: none;
+    }
+
+    nav,
+    nav>ul,
+    .banner,
+    .skill-container,
+    .resume-container,
+    footer,
+    .about-container {
         flex-direction: column;
     }
+
+    nav>ul {
+        gap: 10px;
+    }
+
+    .banner .pic {
+        width: 100%;
+    }
+
+    .banner,
     #what-i-do-description {
         padding: 20px;
     }
-    footer, .about{
+
+    .primary-btn {
+        margin-bottom: 15px;
+    }
+
+    footer,
+    .about {
         padding: 10px;
     }
-    .footer-colum{
+
+    .footer-colum {
         width: 100%;
     }
-    .contact input[type="text"], .contact input[type="email"], textarea {
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
         width: 80%;
     }
 }
+
 /* Medium devices */
-@media screen and (max-width:992px) and (min-width:576px){
-    footer{
+@media screen and (max-width:992px) and (min-width:576px) {
+    footer {
         padding: 20px;
+    }
+
+    .primary-btn {
+        margin-bottom: 15px;
     }
 }
